@@ -13,12 +13,13 @@
     "start",
     "tutorial",
     "demo",
-	"bootstrap"
+    "bootstrap"
   ],
   "author": "erdemci",
   "license": "CC0-1.0",
   "devDependencies": {
     "electron": "^1.4.1",
+    "jquery": "^3.1.1",
     "bootstrap": "^3.3.7"
   }
 }
