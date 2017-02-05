@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>imtihanyeri.com | Login</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="content/css/main.css" />
+</head>
+
+<body>
+    <div class="content">
+        <div class="title">Create account</div>
+        <input type="text" placeholder="E-mail" />
+        <input type="password" placeholder="Password" />
+        <input type="checkbox" id="rememberMe" />
+        <label for="rememberMe"></label><span>I have read and agree to the <a href="#">Terms of Use </a>and <a href="#">Privacy Policy</a></span>
+        <button>Create Account</button>
+        <div class="social"> <span>or sign up with social media</span></div>
+        <div class="buttons">
+            <button class="facebook"><i class="fa fa-facebook"></i>Facebook</button>
+            <button class="twitter"><i class="fa fa-twitter"></i>Twitter</button>
+            <button class="google"><i class="fa fa-google-plus"></i>Google</button>
+        </div>
+        <div class="already">Already have an account? <a href="#">Sign In</a></div>
+    </div>
+    <!-- Insert this line above script imports  -->
+    <script>
+        if (typeof module === 'object') {
+            window.module = module;
+            module = undefined;
+        }
+    </script>
+    <!-- normal script imports etc  -->
+    <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- Insert this line after script imports -->
+    <script>
+        if (window.module) module = window.module;
+    </script>
+</body>
+<script>
+    // You can also require other files to run in this process
+    require('./renderer.js')
+</script>
+
+</html>

@@ -3,15 +3,24 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Hello World!</title>
-  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+  <title>imtihanyeri.com</title>
+  <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css" />
 </head>
 
 <body>
-  <h1>Hello World!</h1>
-  <!-- All of the Node.js APIs are available in this renderer process. -->
-  We are using Node.js
+  <script>
+    if (typeof module === 'object') {
+      window.module = module;
+      module = undefined;
+    }
+  </script>
+  <!-- normal script imports etc  -->
+  <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
   <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <!-- Insert this line after script imports -->
+  <script>
+    if (window.module) module = window.module;
+  </script>
   <script>
     document.write(process.versions.node)
   </script>, Chromium
@@ -23,6 +32,9 @@
   </script>.
 </body>
 <script>
+  $(document).ready(function () {
+    window.location = "./login.html";
+  })
   // You can also require other files to run in this process
   require('./renderer.js')
 </script>
